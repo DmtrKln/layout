@@ -1,0 +1,155 @@
+
+.bunnert{
+
+    &__block{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__top{
+        position: relative;
+    }
+    &__topTitle{
+        text-transform: uppercase;
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 90px;
+        color: $dark_blue;
+
+    }
+    &__subtitle{
+        padding-top: 14px;
+        font-family: $font-family;
+        color: $dark_blue;
+        font-weight: 500;
+        font-size: 24px;
+        padding-bottom: 50px
+    }
+    &__btn{
+        width: 340px;
+        height: 56px;
+        background-color: $dark_blue;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 18px;
+        color: $white;
+        border-radius: 10px;
+        margin-bottom: 550px;
+    }
+    &__img{
+        
+        img{
+            position: absolute;
+            top: 160px;
+            left: 1100px;
+            z-index: 1;
+        }
+    }
+    
+    
+    &__line{
+        img{
+            position: absolute;
+            top: 250px;
+            left: 0;
+            z-index: 0;
+        }
+        
+    }
+}
+.about{
+    &__top{
+        display: flex;
+    }
+    &__left{
+        flex:2;
+        padding-right: 90px;
+    }
+    &__leftP{
+            margin-bottom: 40px;
+            font-family: $font-family;
+            color: $dark_blue;
+            font-weight: 700;
+            font-size: 40px;
+    }
+    &__title{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 200%;
+        color: $gray;
+    }
+    &__right{
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    &__card{
+        width: calc((100% - 50px)/2);
+       
+    }
+    &__cardTitle{
+        color:$dark_blue;
+        font-weight: 500;
+        font-size: 40px;
+        font-variant: small-caps;
+
+    }
+    &__cardAbout{
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        font-variant: small-caps;
+        color: $dark_blue;
+    }
+    &__cardWhat{
+        color: $gray;
+        font-weight: 400;
+        font-size: 18px;
+        font-variant: small-caps;
+    }
+    &__botton{
+        display: flex;
+        gap: 80px;
+    }
+    &__bottonRight{
+
+        flex:1.2;
+
+        img{
+            display: inline;
+        }
+        h3{
+
+            font-weight: 500;
+            font-size: 30px;
+            color: $dark_blue;
+        }
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 167%;
+            color: $gray;
+        }
+    }
+    &__bottonLeft{
+
+        flex:1;
+
+        img{
+            display: inline;
+        }
+
+        h3{
+            font-weight: 500;
+            font-size: 30px;
+            color: $dark_blue;
+        }
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 167%;
+            color: $gray;
+        }
+    }
+}
