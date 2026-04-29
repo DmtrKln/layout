@@ -223,7 +223,7 @@ a {
   font-weight: 400;
   font-size: 18px;
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 550px;
 }
 .bunnert__img img {
@@ -239,90 +239,354 @@ a {
   z-index: 0;
 }
 
-.about__top {
+.experience {
+  margin-bottom: 200px;
+}
+.experience__wrapTop {
   display: flex;
+  gap: 88px;
 }
-.about__left {
-  flex: 2;
-  padding-right: 90px;
+.experience__text {
+  flex-direction: column;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  width: calc(88% - 44px);
 }
-.about__leftP {
-  margin-bottom: 40px;
+.experience__title {
   font-family: "Readex Pro", sans-serif;
   color: #061c35;
   font-weight: 700;
   font-size: 40px;
 }
-.about__title {
+.experience__desc {
   font-family: "Readex Pro", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
   color: #666363;
 }
-.about__right {
+.experience__cards {
+  width: calc(50% - 44px);
   display: flex;
-  flex: 1;
   flex-wrap: wrap;
   gap: 50px;
 }
-.about__card {
-  width: calc((100% - 50px) / 2);
+.experience__card {
+  width: calc(50% - 25px);
 }
-.about__cardTitle {
+.experience__cardTitle {
+  margin-bottom: 15px;
   color: #061c35;
   font-weight: 500;
   font-size: 40px;
   font-variant: small-caps;
+  font-family: "Readex Pro", sans-serif;
 }
-.about__cardAbout {
-  padding-bottom: 20px;
+.experience__cardAbout {
+  margin-bottom: 30px;
   font-weight: 500;
   font-size: 18px;
   font-variant: small-caps;
   color: #061c35;
+  font-family: "Readex Pro", sans-serif;
 }
-.about__cardWhat {
+.experience__cardWhat {
   color: #666363;
   font-weight: 400;
   font-size: 18px;
   font-variant: small-caps;
+  font-family: "Readex Pro", sans-serif;
 }
-.about__botton {
+.experience__botton {
   display: flex;
-  gap: 80px;
+  gap: 100px;
+  margin-top: 150px;
 }
-.about__bottonRight {
-  flex: 1.2;
+.experience__bottonLeft {
+  width: calc(60% - 50px);
 }
-.about__bottonRight img {
-  display: inline;
-}
-.about__bottonRight h3 {
+.experience__bottonLeft h3 {
   font-weight: 500;
   font-size: 30px;
   color: #061c35;
+  padding-bottom: 10px;
+  font-family: "Readex Pro", sans-serif;
 }
-.about__bottonRight p {
+.experience__bottonLeft p {
   font-weight: 400;
   font-size: 18px;
   line-height: 167%;
   color: #666363;
+  font-family: "Readex Pro", sans-serif;
 }
-.about__bottonLeft {
-  flex: 1;
+.experience__imgAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-.about__bottonLeft img {
+.experience__bottonRight img {
   display: inline;
 }
-.about__bottonLeft h3 {
+.experience__bottonRight h3 {
   font-weight: 500;
   font-size: 30px;
   color: #061c35;
+  padding-bottom: 10px;
+  font-family: "Readex Pro", sans-serif;
 }
-.about__bottonLeft p {
+.experience__bottonRight p {
   font-weight: 400;
   font-size: 18px;
   line-height: 167%;
   color: #666363;
+  font-family: "Readex Pro", sans-serif;
+}
+
+.services__title {
+  display: flex;
+  gap: 215px;
+  margin-bottom: 60px;
+}
+.services__titleLeft {
+  display: flex;
+  align-items: center;
+}
+.services__titleLeft h3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #061c35;
+}
+.services__titleLeft button {
+  font-weight: 400;
+  font-size: 18px;
+  font-variant: small-caps;
+  color: #ffffff;
+  width: 280px;
+  height: 55px;
+  background-color: #061c35;
+  border-radius: 20px;
+  font-family: "Readex Pro", sans-serif;
+}
+.services__titleRight {
+  display: flex;
+  align-items: center;
+}
+.services__titleRight p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  font-family: "Readex Pro", sans-serif;
+  color: #666363;
+}
+.services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+}
+.services__card {
+  width: calc((100% - 260px) / 4);
+}
+.services__card img:first-of-type {
+  margin-bottom: 40px;
+}
+.services__card img {
+  margin-bottom: 20px;
+}
+.services__card h4:first-of-type {
+  font-weight: 500;
+  font-size: 27px;
+  font-family: "Readex Pro", sans-serif;
+  color: #061c35;
+  margin-bottom: 40px;
+}
+.services__card h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #061c35;
+  margin-bottom: 20px;
+}
+.services__card p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #666363;
+  margin-bottom: 150px;
+}
+.services__cardWrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.services__border {
+  border-radius: 20px;
+  width: 160px;
+  height: 12px;
+  background-color: #061c35;
+}
+
+.directions {
+  margin-bottom: 200px;
+}
+.directions__wrapDirections {
+  width: 930px;
+  margin: 0 auto;
+}
+.directions__wrapTop h4 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #061c35;
+  margin-bottom: 20px;
+  font-family: "Readex Pro", sans-serif;
+}
+.directions__wrapTop p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  text-align: center;
+  font-family: "Readex Pro", sans-serif;
+  color: #666363;
+  margin-bottom: 80px;
+}
+.directions__card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 95px;
+}
+.directions__card p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #061c35;
+}
+.directions__card img {
+  width: 30px;
+  height: 30px;
+}
+.directions__cardActive {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 139%;
+  color: #061c35;
+}
+.directions__cardActive img {
+  width: 30px;
+  height: 30px;
+}
+
+.map {
+  margin-bottom: 200px;
+}
+.map__title {
+  position: relative;
+}
+.map__title h4 {
+  font-family: "Readex Pro", sans-serif;
+  color: #061c35;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.map__title p {
+  font-family: "Readex Pro", sans-serif;
+  color: #666363;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125%;
+  margin-bottom: 100px;
+}
+.map__title img {
+  position: absolute;
+  top: -60px;
+  right: -110px;
+  z-index: -1;
+}
+.map__wrapBlock {
+  margin-bottom: 250px;
+  border-radius: 20px;
+  position: relative;
+}
+.map__wrapBlock h4 {
+  position: absolute;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  font-variant: small-caps;
+  color: rgba(0, 0, 0, 0);
+  top: 0;
+  right: 0;
+}
+.map__wrapBlock p {
+  margin-bottom: 50px;
+  font-family: "Readex Pro", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 182%;
+  z-index: 3;
+}
+.map__block {
+  background-color: #061c35;
+  width: 1000px;
+  height: 275px;
+  position: absolute;
+  top: -35px;
+  right: 1210px;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.career {
+  margin-bottom: 300px;
+}
+.career__wrap {
+  margin: 0 auto;
+  width: 1060px;
+}
+.career__create {
+  text-align: center;
+}
+.career__create h4 {
+  color: #061c35;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.career__create p {
+  color: #061c35;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 167%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.career__create button {
+  background-color: #061c35;
+  color: #ffffff;
+  font-family: "Readex Pro", sans-serif;
+  border-radius: 20px;
+  padding: 15px 82px;
+  font-weight: 400;
+  font-size: 18px;
+  font-variant: small-caps;
+  width: 334px;
+  height: 54px;
+}
+
+.footer {
+  background-color: #061c35;
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+}
+.footer__menu li a {
+  font-family: "Readex Pro", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
 }

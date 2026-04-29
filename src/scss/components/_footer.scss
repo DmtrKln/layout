@@ -1,0 +1,14 @@
+.footer{
+    background-color: $dark_blue;
+
+    &__menu{
+        display: flex;
+        justify-content: space-around;
+        li a {
+            font-family: $font-family;
+            color: $white;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+}
