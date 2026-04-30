@@ -170,6 +170,7 @@ a {
 }
 .header__contact {
   display: flex;
+  align-items: center;
   gap: 155px;
 }
 .header__contact a {
@@ -179,7 +180,8 @@ a {
   color: #061c35;
 }
 .header__contactIcons {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   gap: 15px;
 }
 .header__btn {
@@ -358,12 +360,11 @@ a {
   color: #061c35;
 }
 .services__titleLeft button {
+  padding: 25px 65px;
   font-weight: 400;
   font-size: 18px;
   font-variant: small-caps;
   color: #ffffff;
-  width: 280px;
-  height: 55px;
   background-color: #061c35;
   border-radius: 20px;
   font-family: "Readex Pro", sans-serif;
@@ -578,15 +579,84 @@ a {
 }
 
 .footer {
+  padding-top: 60px;
   background-color: #061c35;
+}
+.footer__wrap {
+  position: relative;
 }
 .footer__menu {
   display: flex;
-  justify-content: space-around;
+  gap: 65px;
+  margin-left: 160px;
+  margin-bottom: 110px;
 }
 .footer__menu li a {
   font-family: "Readex Pro", sans-serif;
   color: #ffffff;
   font-weight: 500;
   font-size: 18px;
+  margin-bottom: 70px;
+}
+.footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 110px;
+  margin-bottom: 25px;
+}
+.footer__info p {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+}
+.footer__infoQ {
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+}
+.footer__socialInfo {
+  display: flex;
+  position: relative;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 95px;
+}
+.footer__socialInfo p {
+  font-family: "Readex Pro", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+.footer__truck {
+  position: absolute;
+  top: -320px;
+  right: -500px;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer__copyright {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 55px;
+}
+.footer__copyright p:first-of-type {
+  font-family: "Readex Pro", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 18px;
+}
+.footer__copyright p {
+  font-family: "Readex Pro", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: right;
 }

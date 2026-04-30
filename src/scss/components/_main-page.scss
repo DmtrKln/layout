@@ -186,12 +186,11 @@
             color: $dark_blue;
         }
         button{
+            padding: 25px 65px;
             font-weight: 400;
             font-size: 18px;
             font-variant: small-caps;
             color: $white;
-            width: 280px;
-            height: 55px;
             background-color: $dark_blue;
             border-radius: 20px;
             font-family: $font-family;
