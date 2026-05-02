@@ -11,13 +11,18 @@
 
     &__about{
         display: flex;
+        align-items: start;
         padding: 70px 0 0 0;
         gap: 65px;
 
+        img{
+            object-fit: fill;
+        }
     }
 
     &__menu{
         display: flex;
+
         gap: 65px;
     
         margin-bottom: 110px;
