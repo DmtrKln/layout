@@ -1,13 +1,17 @@
 
 .bunnert{
 
+    margin: 220px 0 525px 0;
+
+    &__wrap{
+        position: relative;
+    }
+
     &__block{
         display: flex;
         justify-content: space-between;
     }
-    &__top{
-        position: relative;
-    }
+
     &__topTitle{
         text-transform: uppercase;
         font-family: $font-family;
@@ -25,57 +29,58 @@
         padding-bottom: 50px
     }
     &__btn{
-        width: 340px;
-        height: 56px;
+        padding: 16px 63px;
         background-color: $dark_blue;
         font-family: $font-family;
         font-weight: 400;
         font-size: 18px;
         color: $white;
         border-radius: 20px;
-        margin-bottom: 550px;
+
+        &:hover {
+            opacity: 0.8;
+    }
     }
     &__img{
-        
-        img{
-            position: absolute;
-            top: 160px;
-            left: 1100px;
-            z-index: 1;
-        }
+
+        position: absolute;
+        top: -75px;
+        right: 0px;
+        z-index: 1;
+
     }
     
     
     &__line{
-        img{
-            position: absolute;
-            top: 250px;
-            left: 0;
-            z-index: 0;
-        }
+       
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: -1;
+    
         
     }
 }
 .experience{
-    margin-bottom: 200px;
+    margin: 80px 0 145px 0;
     &__wrapTop{
         display: flex;
         gap: 88px;
+
     }
     &__text{
-        flex-direction: column;
-        display: flex;
-        gap: 40px;
-        justify-content: space-between;
-        width: calc(88% - 44px);
+        width: calc(80% - 44px);
     }
     &__title{
+        margin-bottom: 40px;
         font-family: $font-family;
         color: $dark_blue;
         font-weight: 700;
         font-size: 40px;
     }
     &__desc{
+        max-width: 930px;
+        width: 100%;
         font-family: $font-family;
         font-weight: 400;
         font-size: 20px;
@@ -84,17 +89,18 @@
         
     }
     &__cards{
-        width: calc(50% - 44px);
+    
         display: flex;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 60px 80px;
     }
     &__card{
-        width: calc(50% - 25px);
+        width: 100%;
+        width: calc(50% - 40px);
         
     }
     &__cardTitle{
-        margin-bottom: 15px;
+
         color:$dark_blue;
         font-weight: 500;
         font-size: 40px;
@@ -102,7 +108,7 @@
         font-family: $font-family;
     }
     &__cardAbout{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         font-weight: 500;
         font-size: 18px;
         font-variant: small-caps;
@@ -115,6 +121,7 @@
         font-size: 18px;
         font-variant: small-caps;
         font-family: $font-family;
+        word-break: keep-all; //запрет разрыва слова вниутри строки
     }
    
     &__botton{
@@ -171,22 +178,29 @@
     }
 }
 .services{
-    
+  
+    margin: 40px 0 115px 0 ;
+
     &__title{
         display: flex;
-        gap: 215px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
         margin-bottom: 60px;
     }
     &__titleLeft{
         display: flex;
         align-items: center;
+        gap: 24px;
+        max-width: 870px;
+
         h3{
             font-weight: 700;
             font-size: 40px;
             color: $dark_blue;
         }
         button{
-            padding: 25px 65px;
+            padding: 16px 50px;
             font-weight: 400;
             font-size: 18px;
             font-variant: small-caps;
@@ -194,11 +208,19 @@
             background-color: $dark_blue;
             border-radius: 20px;
             font-family: $font-family;
-        }
+            white-space: nowrap;
+
+            &:hover {
+                opacity: 0.8;
     }
+        }
+        
+    }
+
     &__titleRight{
-        display: flex;
-        align-items: center;
+
+        max-width: 490px;
+
         p{
             font-weight: 500;
             font-size: 18px;
@@ -207,6 +229,7 @@
             color: $gray;
         }
     }
+
     &__cards{
         display: flex;
         flex-wrap: wrap;
@@ -254,7 +277,9 @@
     }
 }
 .directions{
-    margin-bottom: 200px;
+    
+    margin: 95px 0 180px 0;
+
     &__wrapDirections{
         width: 930px;
         margin: 0 auto;
@@ -310,7 +335,7 @@
     }
 }
 .map{
-    margin-bottom: 200px;
+    margin: 125px 0 130px 0;
     &__title{
         position: relative;
         h4{
@@ -375,10 +400,14 @@
         border-radius: 20px;
 
     }
-
+    &__group{
+            display: flex;
+            gap: 70px;
+            justify-content: center;
+        }
 }
 .career{
-    margin-bottom: 300px;
+    margin: 70px 0 260px 0;
     &__wrap{
         margin: 0 auto;
         width: 1060px;

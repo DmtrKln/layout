@@ -1,63 +1,91 @@
-.header{
-     border-bottom: 1px solid $dark_blue;
-     margin-bottom: 135px;
-    .container {
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        padding-top: 40px;  
-    }
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #d5e4f2;
 
-    &__menu{
-        display: flex;
-        align-items: center;
-        gap: 140px;
-        li a {
-            font-family: $font-family;
-            font-weight: 500;
-            font-size: 18px;
-            color: $dark_blue;
+  &__wrap {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    justify-self: center;
+    width: 100%;
+    max-width: 530px; 
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px;
+    width: 100%;
+
+    li {
+      list-style: none;
+
+      a {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 18px;
+        color: $dark_blue;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: 0.3s ease;
+
+        &:hover {
+          opacity: 0.7;
         }
+      }
     }
+  }
 
-    &__contact{
-        display: flex;
-        align-items: center;
-        gap: 155px;
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 
-        a{
-            font-family: $font-family;
-            font-weight: 500;
-            font-size: 18px;
-            color: $dark_blue;
-        }
+    a {
+      font-family: $font-family;
+      font-weight: 500;
+      font-size: 18px;
+      color: $dark_blue;
+      text-decoration: none;
+      white-space: nowrap;
     }
-    &__contactIcons{
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-    &__btn{
-            font-family: $font-family;
-            font-weight: 500;
-            font-size: 18px;
-            color: $white;
-            background-color: $dark_blue;
-            border-radius: 20px;
-            width: 205px;
-            height: 35px;
-    }
-    // @media (max-width: 1400px){
+  }
 
-    // div{
-    //     flex-wrap: wrap;
-    // }    
-        
-    // &__nav{
-    //     order: 1;
-    //     flex-basis: 100%;
-    //     border-radius: 20px;
-    // }
-    
-    // }    
+  &__contactIcons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__btn {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    color: $white;
+    background-color: $dark_blue;
+    border-radius: 20px;
+    padding: 8px 16px;
+    white-space: nowrap;
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+
 }
