@@ -1,5 +1,5 @@
 .footer{
-
+    padding: 70px 0 50px 0;
     background-color: $dark_blue;
     
     &__wrap{
@@ -12,7 +12,6 @@
     &__about{
         display: flex;
         align-items: start;
-        padding: 70px 0 0 0;
         gap: 65px;
 
         img{
@@ -37,25 +36,20 @@
     &__info{
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
-        // gap: 25px 110px; хзхзхзхзх
-        gap: 110px;
+        justify-content: space-between;
+        max-width: 600px;
+        gap: 20px;
         margin-bottom: 25px;
 
         p{
-            // width: calc(60% - 55px);
+            
             color: $white;
             font-weight: 500;
             font-size: 18px;
         }
     } 
 
-    &__infoQ{
-        margin-bottom: 40px;
-        color: $white;
-        font-weight: 500;
-        font-size: 18px;
-    }
+
     
     &__socialInfo{
         display: flex;
@@ -85,6 +79,7 @@
 
         display: flex;
         gap: 55px;
+        
         p:first-of-type{
             font-family: $font-family;
             color: $white;

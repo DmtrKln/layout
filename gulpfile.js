@@ -4,6 +4,18 @@ const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 
+const js = () => {
+  return gulp.src([
+    'src/js/vendor/**/*.js',
+    'src/js/functions/**/*.js',
+    'src/js/components/**/*.js',
+    'src/js/main.js'
+  ])
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.stream());
+};
+
 function html() {
   return gulp.src('src/*.html')
     .pipe(fileinclude({
@@ -44,16 +56,19 @@ function watchFiles() {
   gulp.watch('src/scss/**/*.scss', styles).on('change', browserSync.reload);
   gulp.watch('src/img/icons/**/*', imagesIcon).on('change', browserSync.reload);
   gulp.watch('src/img/main/**/*', imagesMain).on('change', browserSync.reload);
+  gulp.watch('src/js/**/*.js', js).on('change', browserSync.reload);
 }
 exports.html = html;
 exports.imagesIcon = imagesIcon;
 exports.imagesMain = imagesMain;
 exports.styles = styles;
+exports.js = js;
 
 exports.default = gulp.series(
   html,
   imagesIcon,
   imagesMain,
   styles,
+  js,
   gulp.parallel(server, watchFiles)
 );
