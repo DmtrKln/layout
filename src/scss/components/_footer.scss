@@ -1,39 +1,99 @@
-.footer{
+.footer {
     padding: 70px 0 50px 0;
     background-color: $dark_blue;
-    
-    &__wrap{
-        background-image: url("../img/main/truck2.svg");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
+    overflow: hidden;
+
+   &__logo-wrap {
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+&__logo {
+    display: block;
+    position: relative;
+    z-index: 1;
+    max-width: 100px;
+}
+
+&__truck {
+    display: none;
+
+    @include tablet {
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 55%;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+        pointer-events: none;
     }
 
-    &__about{
-        display: flex;
-        align-items: start;
-        gap: 65px;
+}
 
-        img{
-            object-fit: fill;
-        }
+&__about {
+    display: flex;
+    align-items: start;
+    gap: 65px;
+
+    @include tablet {
+        position: relative;
+        z-index: 1;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+&__wrap {
+    background-image: url("../img/main/truck2.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50% auto;
+    position: relative;
+
+    @media (max-width: 1400px) {
+        background-size: 55% auto;
+        background-position: 110% center;
     }
 
-    &__menu{
-        display: flex;
+    @media (max-width: 1200px) {
+        background-size: 60% auto;
+        background-position: 120% center;
+    }
 
+    @include tablet {
+        background-image: none;
+    }
+}
+
+    &__menu {
+        display: flex;
         gap: 65px;
-    
         margin-bottom: 110px;
+
+        @include tablet {
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
         li a {
             font-family: $font-family;
             color: $white;
             font-weight: 500;
             font-size: 18px;
             margin-bottom: 70px;
+
+            @include small-tablet {
+                margin-bottom: 15px;
+            }
         }
     }
-    &__info{
+
+    &__info {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -41,52 +101,109 @@
         gap: 20px;
         margin-bottom: 25px;
 
-        p{
-            
+        @media(max-width:1250px){
+            max-width: 500px;
+        }
+
+        p {
             color: $white;
             font-weight: 500;
             font-size: 18px;
         }
-    } 
 
+        @include tablet {
+            flex-direction: column;
+            gap: 15px;
+            max-width: 100%;
+            margin-bottom: 35px;
 
-    
-    &__socialInfo{
+        }
+
+        @include small-tablet{
+            p {
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    &__emailDesktop{
+
+        @include tablet{
+
+            display: none;
+        }
+    }
+
+    &__emailMobil{
+        display: none;
+
+        @include tablet{
+
+            display: block;
+            font-weight: 500;
+            font-size: 18px;
+            font-family: $font-family;
+            color: $white;
+            margin-top: 35px;
+        }
+    }
+
+    &__socialInfo {
         display: flex;
         position: relative;
         justify-content: start;
         align-items: center;
-        gap: 40px;
         margin-bottom: 95px;
+        gap: 40px;
 
-        p{
+        p {
             font-family: $font-family;
             color: $white;
             font-weight: 400;
             font-size: 16px;
             line-height: 100%;
         }
-        
 
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        @include small-tablet{
+            p{
+                font-weight: 300;
+            }
+        }
     }
 
-    &__social{
+    &__social {
         display: flex;
         align-items: center;
         gap: 15px;
-    }
-    &__copyright{
 
+        p{
+            @include tablet{
+                margin-bottom: 60px;
+        }
+        }
+    }
+
+    &__copyright {
         display: flex;
         gap: 55px;
-        
-        p:first-of-type{
+
+        p:first-of-type {
             font-family: $font-family;
             color: $white;
             font-weight: 300;
-            font-size: 18px;
+            font-size: 16px;
+            margin-bottom: 15px;
         }
-        p{
+
+        p {
             font-family: $font-family;
             color: $white;
             font-weight: 400;
@@ -94,6 +211,21 @@
             line-height: 100%;
             text-align: right;
         }
+
+        @include tablet {
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                text-align: left;
+                font-size: 14px;
+            }
+        }
+
+        @media(max-width:1250px){
+            flex-direction: column;
+            align-items: start;
+            gap: 15px;
+        }
     }
-   
 }

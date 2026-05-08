@@ -6,30 +6,54 @@
   background-color: #fff;
   border-bottom: 1px solid #d5e4f2;
 
+  @include maxdesktop {
+    border-bottom: none;
+    position: fixed;
+  }
+
   &__wrap {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 33% auto;
+    column-gap: 20px;
     align-items: center;
-    padding: 20px 0;
+    justify-content: space-between;
+    padding: 40px 0 12px 0;
+
+    @include maxdesktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 30px 0;
+    }
   }
 
   &__logo {
     display: flex;
     align-items: center;
+    width: 135px;
+    flex-shrink: 0;
+
+    @include small-tablet{
+      width: 80px;
+    }
   }
 
   &__nav {
     justify-self: center;
     width: 100%;
-    max-width: 530px; 
+
+    @include maxdesktop {
+      display: none;
+    }
   }
 
   &__menu {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
-    width: 100%;
 
     li {
       list-style: none;
@@ -50,6 +74,41 @@
     }
   }
 
+  &__menuActiv {
+    position: relative;
+
+    ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $white;
+      width: 180px;
+      padding: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      z-index: 10;
+    }
+
+    ul li {
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        display: block;
+        padding: 12px 16px;
+      }
+    }
+
+    &:hover > ul {
+      display: block;
+    }
+  }
+
   &__contact {
     display: flex;
     align-items: center;
@@ -62,6 +121,10 @@
       color: $dark_blue;
       text-decoration: none;
       white-space: nowrap;
+    }
+
+    @include maxdesktop {
+      display: none;
     }
   }
 
@@ -87,5 +150,15 @@
     }
   }
 
+  &__burger {
+    display: none;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    cursor: pointer;
 
+    @include maxdesktop {
+      display: block;
+    }
+  }
 }

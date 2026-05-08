@@ -8,20 +8,28 @@
         <section class="bunnert">
           <div class="container">
             <div class="bunnert__wrap">
+              <img
+                class="bunnert__mobileContainer"
+                src="img/main/container.svg"
+                alt=""
+              />
+
               <div class="bunnert__top">
                 <h1 class="bunnert__topTitle">turbo trans</h1>
                 <p class="bunnert__subtitle">
-                  Международные грузоперевозки по всему миру.<br />Полный
-                  контроль и ответственность на каждом этапе.
+                  Международные грузоперевозки по всему миру.<br />
+                  Полный контроль и ответственность на каждом этапе.
                 </p>
                 <button class="bunnert__btn btn-reset">
                   Подробности о компании
                 </button>
               </div>
+
               <img class="bunnert__img" src="img/main/truck.svg" alt="" />
-              <img class="bunnert__line" src="img/main/line.svg" alt="" />
             </div>
           </div>
+          <img class="bunnert__line" src="img/main/line.svg" alt="" />
+          <img class="bunnert__lineMobail" src="img/main/line2.svg" alt="" />
         </section>
         <section class="experience">
           <div class="container">
@@ -55,7 +63,7 @@
                 </div>
                 <div class="experience__card">
                   <h3 class="experience__cardTitle">100%</h3>
-                  <p class="experience__cardexperience">под контролем</p>
+                  <p class="experience__cardeAbout">под контролем</p>
                   <p class="experience__cardWhat">
                     Документальное сопровождение
                   </p>
@@ -100,137 +108,281 @@
                     Быстрые и эффективные транспортные услуги с широкой сетью
                     обслуживания в каждой точке.
                   </p>
+                  <button class="btn-reset services__btnMobile">
+                    Перейти к услугам
+                  </button>
                 </div>
               </div>
-              <div class="services__slider swiper">
-                <div class="services__wrapper swiper-wrapper">
-                  <div class="services__card swiper-slide">
-                    <img src="img/main/transport1.svg" alt="" />
-                    <h4>Автомобильный транспорт</h4>
-                    <p>
-                      Межрегиональные и международные перевозки грузов. Гибкие
-                      маршруты, контроль сроков и надежная доставка
-                    </p>
+              <div class="services__slider swiper" id="servicesSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="services__card">
+                      <div class="services__card-img">
+                        <img
+                          src="img/main/transport1.svg"
+                          alt="Автомобильный транспорт"
+                        />
+                      </div>
+                      <div class="services__card-body">
+                        <h4>Автомобильный транспорт</h4>
+                        <p>
+                          Межрегиональные и международные перевозки грузов.
+                          Гибкие маршруты, контроль сроков и надежная доставка
+                        </p>
+                        <a href__="#" class="services__more">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="services__card swiper-slide">
-                    <img src="img/main/transport2.svg" alt="" />
-                    <h4>Морские перевозки</h4>
-                    <p>
-                      Международные морские перевозки для глобальных поставок
-                    </p>
+
+                  <div class="swiper-slide">
+                    <div class="services__card">
+                      <div class="services__card-img">
+                        <img
+                          src="img/main/transport2.svg"
+                          alt="Морские перевозки"
+                        />
+                      </div>
+                      <div class="services__card-body">
+                        <h4>Морские перевозки</h4>
+                        <p>
+                          Международные морские перевозки для глобальных
+                          поставок
+                        </p>
+                        <a href__="#" class="services__more">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="services__card swiper-slide">
-                    <img src="img/main/transport3.svg" alt="" />
-                    <h4>Авиаперевозки</h4>
-                    <p>
-                      Быстрая международная доставка срочных и ценных грузов
-                    </p>
+                  <div class="swiper-slide">
+                    <div class="services__card">
+                      <div class="services__card-img">
+                        <img
+                          src="img/main/transport3.svg"
+                          alt="Авиаперевозки"
+                        />
+                      </div>
+                      <div class="services__card-body">
+                        <h4>Авиаперевозки</h4>
+                        <p>
+                          Быстрая международная доставка срочных и ценных грузов
+                        </p>
+                        <a href__="#" class="services__more">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="services__card swiper-slide">
-                    <img src="img/main/transport4.svg" alt="" />
-                    <h4>Хранение</h4>
-                    <p>
-                      Складские решения для международных и внутренних
-                      грузопотоков
-                    </p>
+
+                  <div class="swiper-slide">
+                    <div class="services__card">
+                      <div class="services__card-img">
+                        <img src="img/main/transport4.svg" alt="Хранение" />
+                      </div>
+                      <div class="services__card-body">
+                        <h4>Хранение</h4>
+                        <p>
+                          Складские решения для международных и внутренних
+                          грузопотоков
+                        </p>
+                        <a href__="#" class="services__more">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="services__card swiper-slide">
-                    <img src="img/main/transport1.svg" alt="" />
-                    <h4>Автомобильный транспорт</h4>
-                    <p>
-                      Межрегиональные и международные перевозки грузов. Гибкие
-                      маршруты, контроль сроков и надежная доставка
-                    </p>
+                  <div class="swiper-slide">
+                    <div class="services__card">
+                      <div class="services__card-img">
+                        <img
+                          src="img/main/transport3.svg"
+                          alt="Автомобильный транспорт"
+                        />
+                      </div>
+                      <div class="services__card-body">
+                        <h4>Автомобильный транспорт</h4>
+                        <p>
+                          Межрегиональные и международные перевозки грузов.
+                          Гибкие маршруты, контроль сроков и надежная доставка
+                        </p>
+                        <a href__="#" class="services__more">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="services__card swiper-slide">
-                    <img src="img/main/transport2.svg" alt="" />
-                    <h4>Морские перевозки</h4>
-                    <p>
-                      Международные морские перевозки для глобальных поставок
-                    </p>
+                  <div class="swiper-slide">
+                    <div class="services__card">
+                      <div class="services__card-img">
+                        <img
+                          src="img/main/transport3.svg"
+                          alt="Морские перевозки"
+                        />
+                      </div>
+                      <div class="services__card-body">
+                        <h4>Морские перевозки</h4>
+                        <p>
+                          Международные морские перевозки для глобальных
+                          поставок
+                        </p>
+                        <a href__="#" class="services__more">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="services__card swiper-slide">
-                    <img src="img/main/transport3.svg" alt="" />
-                    <h4>Авиаперевозки</h4>
-                    <p>
-                      Быстрая международная доставка срочных и ценных грузов
-                    </p>
+                  <div class="swiper-slide">
+                    <div class="services__card">
+                      <div class="services__card-img">
+                        <img
+                          src="img/main/transport3.svg"
+                          alt="Авиаперевозки"
+                        />
+                      </div>
+                      <div class="services__card-body">
+                        <h4>Авиаперевозки</h4>
+                        <p>
+                          Быстрая международная доставка срочных и ценных грузов
+                        </p>
+                        <a href__="#" class="services__more">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="services__card swiper-slide">
-                    <img src="img/main/transport4.svg" alt="" />
-                    <h4>Хранение</h4>
-                    <p>
-                      Складские решения для международных и внутренних
-                      грузопотоков
-                    </p>
+                  <div class="swiper-slide">
+                    <div class="services__card">
+                      <div class="services__card-img">
+                        <img src="img/main/transport3.svg" alt="Хранение" />
+                      </div>
+                      <div class="services__card-body">
+                        <h4>Хранение</h4>
+                        <p>
+                          Складские решения для международных и внутренних
+                          грузопотоков
+                        </p>
+                        <a href__="#" class="services__more">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-scrollbar"></div>
+
+                <div class="services__progress" id="servicesProgress">
+                  <div
+                    class="services__progress-line"
+                    id="servicesProgressLine"
+                  ></div>
+                  <div
+                    class="services__progress-thumb"
+                    id="servicesProgressThumb"
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section class="directions">
           <div class="container">
-            <div class="directions__wrapDirections">
-              <div class="directions__wrapTop">
-                <h4>
-                  Наши направления<br />
-                  деятельности
-                </h4>
+            <div class="directions__wrap">
+              <div class="directions__top">
+                <h4>Наши направления деятельности</h4>
                 <p>
                   Turbo Trans придерживается политики наилучшего обслуживания в
                   своё время и работает с целью полной удовлетворённости
                   клиентов.
                 </p>
               </div>
-              <div class="directions__wrapBotton">
-                <div class="directions__card">
-                  <p>Транспорт</p>
-                  <img src="img/icons/arrowR.svg" alt="" />
-                </div>
-                <div class="directions__card">
-                  <p>Таможенное оформление</p>
-                  <img src="img/icons/arrowR.svg" alt="" />
-                </div>
-                <div class="directions__card directions__cardActive">
-                  <div class="directions__cardDesc">
-                    <p>Управление финансами</p>
+              <nav class="directions__list">
+                <ul>
+                  <li class="directions__listItem">
+                    <div class="directions__listHeader">
+                      <a href="javascript:void(0)">Транспорт</a>
+                      <img
+                        src="img/icons/arrowR.svg"
+                        alt=""
+                        class="directions__listArrow"
+                      />
+                    </div>
                     <p>
                       Планирование и контроль финансовых потоков, обеспечивающих
                       стабильность и эффективность логистических операций.
                     </p>
-                  </div>
-                  <img src="img/icons/arrowL.svg" alt="" />
-                </div>
-                <div class="directions__card">
-                  <p>Внешнеторговый консалтинг</p>
-                  <img src="img/icons/arrowR.svg" alt="" />
-                </div>
-              </div>
+                  </li>
+                  <li class="directions__listItem">
+                    <div class="directions__listHeader">
+                      <a href="javascript:void(0)">Таможенное оформление</a>
+                      <img
+                        src="img/icons/arrowR.svg"
+                        alt=""
+                        class="directions__listArrow"
+                      />
+                    </div>
+                    <p>
+                      Планирование и контроль финансовых потоков, обеспечивающих
+                      стабильность и эффективность логистических операций.
+                    </p>
+                  </li>
+                  <li class="directions__listItem">
+                    <div class="directions__listHeader">
+                      <a href="javascript:void(0)">Управление финансами</a>
+                      <img
+                        src="img/icons/arrowR.svg"
+                        alt=""
+                        class="directions__listArrow"
+                      />
+                    </div>
+                    <p>
+                      Планирование и контроль финансовых потоков, обеспечивающих
+                      стабильность и эффективность логистических операций.
+                    </p>
+                  </li>
+                  <li class="directions__listItem">
+                    <div class="directions__listHeader">
+                      <a href="javascript:void(0)">Внешнеторговый консалтинг</a>
+                      <img
+                        src="img/icons/arrowR.svg"
+                        alt=""
+                        class="directions__listArrow"
+                      />
+                    </div>
+                    <p>
+                      Планирование и контроль финансовых потоков, обеспечивающих
+                      стабильность и эффективность логистических операций.
+                    </p>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </section>
         <section class="map">
           <div class="container">
             <div class="map__wrap">
-              <div class="map__title">
-                <h4>Длинный заголовок <br />касательно <br />кнаправлени</h4>
-                <p>
-                  Неважно, где вы — мы обеспечим доставку в любую<br />точку
-                  мира.
-                </p>
-                <img src="img/main/Earth.svg" alt="" />
+              <div class="map__top">
+                <div class="map__title">
+                  <h4 class="map__titleDesktop">
+                    Длинный заголовок касательно направлени
+                  </h4>
+                  <h4 class="map__titleMobile">
+                    Доставляем по России и всему миру: выбери свой регион
+                  </h4>
+                  <p>
+                    Неважно, где вы — мы обеспечим доставку в любую точку мира.
+                  </p>
+                </div>
+                <div class="map__wrapBlock">
+                  <ul class="map__list">
+                    <li class="map__item">
+                      <span class="map__num">01</span>
+                      <span class="map__text">Опытный персонал</span>
+                    </li>
+                    <li class="map__item">
+                      <span class="map__num">02</span>
+                      <span class="map__text">Устойчивый подход</span>
+                    </li>
+                    <li class="map__item">
+                      <span class="map__num">03</span>
+                      <span class="map__text">Международная деловая сеть</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="map__image">
+                  <img src="img/main/Earth.svg" alt="" />
+                </div>
               </div>
-              <div class="map__wrapBlock">
-                <div class="map__block"></div>
-                <h4>01</h4>
-                <p>Опытный персонал</p>
-                <h4>02</h4>
-                <p>Устойчивый подход</p>
-                <h4>03</h4>
-                <p>Международная деловая сеть</p>
-              </div>
+            </div>
+          </div>
+          <!-- СИНИЙ БЛОК — ВНЕ КОНТЕЙНЕРА И СПОНСОРЫ -->
+          <div class="map__block">
+            
             </div>
           </div>
           <div class="map__group">
@@ -250,8 +402,9 @@
                 <h4>Построй карьеру вместе с Turbo Trans</h4>
                 <p>
                   Станьте частью команды Turbo Trans и создавайте будущее
-                  международных перевозок. <br />Пришлите своё резюме на
-                  info@trans-turbo.com, и мы свяжемся с вами.
+                  международных перевозок.
+                  <br />Пришлите своё резюме на info@trans-turbo.com, и мы
+                  свяжемся с вами.
                 </p>
                 <button class="btn-reset">Связаться с нами</button>
               </div>
@@ -261,7 +414,5 @@
       </main>
       @include('partials/footer.html')
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
