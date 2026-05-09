@@ -154,6 +154,8 @@
     height: auto;
     flex-shrink: 0;
     cursor: pointer;
+    position: relative;
+    z-index: 1100;
 
     @include maxdesktop {
       display: block;

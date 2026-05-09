@@ -98,3 +98,25 @@ items.forEach(item => {
         item.classList.add('active');
     });
 });
+
+// мобильное меню 
+const burger = document.querySelector('.header__burger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuClose = document.getElementById('mobileMenuClose');
+const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+function openMenu() {
+    mobileMenu.classList.add('is-open');
+    mobileMenuOverlay.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMenu() {
+    mobileMenu.classList.remove('is-open');
+    mobileMenuOverlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+}
+
+if (burger) burger.addEventListener('click', openMenu);
+if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMenu);
+if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMenu);

@@ -4,6 +4,37 @@
   <body class="page__body">
     <div class="site-container">
       @include('partials/header.html')
+      <div class="mobileMenu" id="mobileMenu">
+        <div class="mobileMenu__top">
+          <a href__="#" class="mobileMenu__logo">
+            <img src="img/logo.svg" alt="Logo" />
+          </a>
+          <button class="mobileMenu__close btn-reset" id="mobileMenuClose">
+            ✕
+          </button>
+        </div>
+
+        <nav class="mobileMenu__nav">
+          <a href__="#">Главная</a>
+          <a href__="#">О нас</a>
+          <a href__="#">Наши услуги</a>
+        </nav>
+
+        <button class="mobileMenu__btn btn-reset">Связаться с нами</button>
+
+        <div class="mobileMenu__bottom">
+          <p>Московский офис: Дзержинский</p>
+          <p>Казанский офис: Пятигорск</p>
+          <a href__="mailto:info@trans-turbo.com" class="mobileMenu__email">
+            info@trans-turbo.com
+          </a>
+          <div class="mobileMenu__icons">
+            <a href__="#"><img src="img/vk.svg" alt="VK" /></a>
+            <a href__="#"><img src="img/tg.svg" alt="Telegram" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="mobileMenu__overlay" id="mobileMenuOverlay"></div>
       <main class="main">
         <section class="bunnert">
           <div class="container">
@@ -13,7 +44,6 @@
                 src="img/main/container.svg"
                 alt=""
               />
-
               <div class="bunnert__top">
                 <h1 class="bunnert__topTitle">turbo trans</h1>
                 <p class="bunnert__subtitle">
@@ -24,13 +54,13 @@
                   Подробности о компании
                 </button>
               </div>
-
               <img class="bunnert__img" src="img/main/truck.svg" alt="" />
             </div>
           </div>
           <img class="bunnert__line" src="img/main/line.svg" alt="" />
           <img class="bunnert__lineMobail" src="img/main/line2.svg" alt="" />
         </section>
+
         <section class="experience">
           <div class="container">
             <div class="experience__wrapTop">
@@ -41,7 +71,7 @@
                   секторе с 2003 года по сей день, продолжает предоставлять
                   услуги в широком географическом регионе, добавляя Китай,
                   Европу, Казахстан, Кыргызстан, Узбекистан и Беларусь к своей
-                  деятельности между Турцией и Россией под брендом “Turbo Trans”
+                  деятельности между Турцией и Россией под брендом "Turbo Trans"
                   с ее предприятием в текстильном секторе в 2016 году.
                 </p>
               </div>
@@ -52,7 +82,7 @@
                   <p class="experience__cardWhat">География перевозок</p>
                 </div>
                 <div class="experience__card">
-                  <h3 class="experience__cardTitle">15+ леты</h3>
+                  <h3 class="experience__cardTitle">15+</h3>
                   <p class="experience__cardAbout">лет практики</p>
                   <p class="experience__cardWhat">Опыт в логистике</p>
                 </div>
@@ -95,6 +125,7 @@
             </div>
           </div>
         </section>
+
         <section class="services">
           <div class="container">
             <div class="services__wrap">
@@ -133,7 +164,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="swiper-slide">
                     <div class="services__card">
                       <div class="services__card-img">
@@ -169,7 +199,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="swiper-slide">
                     <div class="services__card">
                       <div class="services__card-img">
@@ -254,7 +283,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="services__progress" id="servicesProgress">
                   <div
                     class="services__progress-line"
@@ -269,6 +297,7 @@
             </div>
           </div>
         </section>
+
         <section class="directions">
           <div class="container">
             <div class="directions__wrap">
@@ -284,7 +313,7 @@
                 <ul>
                   <li class="directions__listItem">
                     <div class="directions__listHeader">
-                      <a href="javascript:void(0)">Транспорт</a>
+                      <a href__="javascript:void(0)">Транспорт</a>
                       <img
                         src="img/icons/arrowR.svg"
                         alt=""
@@ -298,7 +327,7 @@
                   </li>
                   <li class="directions__listItem">
                     <div class="directions__listHeader">
-                      <a href="javascript:void(0)">Таможенное оформление</a>
+                      <a href__="javascript:void(0)">Таможенное оформление</a>
                       <img
                         src="img/icons/arrowR.svg"
                         alt=""
@@ -312,7 +341,7 @@
                   </li>
                   <li class="directions__listItem">
                     <div class="directions__listHeader">
-                      <a href="javascript:void(0)">Управление финансами</a>
+                      <a href__="javascript:void(0)">Управление финансами</a>
                       <img
                         src="img/icons/arrowR.svg"
                         alt=""
@@ -326,7 +355,9 @@
                   </li>
                   <li class="directions__listItem">
                     <div class="directions__listHeader">
-                      <a href="javascript:void(0)">Внешнеторговый консалтинг</a>
+                      <a href__="javascript:void(0)"
+                        >Внешнеторговый консалтинг</a
+                      >
                       <img
                         src="img/icons/arrowR.svg"
                         alt=""
@@ -343,6 +374,7 @@
             </div>
           </div>
         </section>
+
         <section class="map">
           <div class="container">
             <div class="map__wrap">
@@ -381,7 +413,6 @@
             </div>
           </div>
           <div class="map__block"></div>
-
           <div class="map__group">
             <img src="img/main/sponsor1.png" alt="" />
             <img src="img/main/sponsor2.png" alt="" />
@@ -392,6 +423,7 @@
             <img src="img/main/sponsor3.png" alt="" />
           </div>
         </section>
+
         <section class="career">
           <div class="container">
             <div class="career__wrap">
@@ -399,9 +431,8 @@
                 <h4>Построй карьеру вместе с Turbo Trans</h4>
                 <p>
                   Станьте частью команды Turbo Trans и создавайте будущее
-                  международных перевозок.
-                  <br />Пришлите своё резюме на info@trans-turbo.com, и мы
-                  свяжемся с вами.
+                  международных перевозок.<br />Пришлите своё резюме на
+                  info@trans-turbo.com, и мы свяжемся с вами.
                 </p>
                 <button class="btn-reset">Связаться с нами</button>
               </div>
@@ -409,6 +440,7 @@
           </div>
         </section>
       </main>
+
       @include('partials/footer.html')
     </div>
   </body>
