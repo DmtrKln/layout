@@ -1,8 +1,7 @@
 .bunnert {
-    position: relative; // важно для абсолютного line
+    position: relative; 
     margin: 120px 0 0 0;
-    overflow: hidden; // обрезаем line за пределами секции
-    padding-bottom: 410px;
+    overflow: hidden; 
 
     @include maxdesktop {
         margin: 0 0 340px 0;
@@ -18,7 +17,7 @@
 
     &__wrap {
         position: relative;
-        min-height: clamp(400px, 55vw, 700px); // вместо padding-top на разных брейках
+        min-height: clamp(400px, 55vw, 700px); 
 
         @include maxdesktop {
             min-height: auto;
@@ -283,7 +282,7 @@
         font-size: 18px;
         font-variant: small-caps;
         font-family: $font-family;
-        word-break: keep-all; //запрет разрыва слова вниутри строки
+        word-break: keep-all; 
 
         @include small-tablet {
             font-weight: 400;
@@ -294,102 +293,83 @@
     }
 
     &__botton {
-        display: flex;
-        gap: 100px;
-        margin-top: 150px;
+    display: flex;
+    gap: 100px;
+    margin-top: 150px;
 
-        @include small-tablet{
-            display: block;
-            margin-bottom: 50px;
-        }
+    @include small-tablet {
+        display: block;
+        margin-bottom: 50px;
     }
-    &__bottonLeft {
-        width: calc(60% - 50px);
+}
 
-        @include tablet{
-            flex-direction: column; 
-        }
+&__bottonLeft,
+&__bottonRight {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    gap: 0 15px; 
+    align-items: start;
 
-        @include small-tablet{
-            width: 100%;
-        }
-        h3 {
+    @include tablet {
+        flex: 1;
+    }
+
+    @include small-tablet {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    img {
+    
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 6px; 
+        height: 24px;
+        object-fit: contain;
+    }
+}
+
+&__bottonContent {
+    grid-column: 2;
+    grid-row: 1;
+
+    h3 {
+        font-weight: 500;
+        font-size: 30px;
+        color: $dark_blue;
+        margin-bottom: 10px;
+        font-family: $font-family;
+
+        @include small-tablet {
             font-weight: 500;
-            font-size: 30px;
-            color: $dark_blue;
-            margin-bottom: 10px;
-            font-family: $font-family;
-
-            @include small-tablet{
-                font-weight: 500;
-                font-size: 24px;
-                margin-bottom: 20px;
+            font-size: 24px;
+            margin-bottom: 15px;
         }
+    }
 
-        }
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        color: $gray;
+        font-family: $font-family;
 
-        p {
+        @include small-tablet {
             font-weight: 400;
-            font-size: 18px;
-            line-height: 167%;
-            color: $gray;
-            font-family: $font-family;
-
-            @include small-tablet{
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 156%;
-                margin-bottom: 45px;
-        }
+            font-size: 16px;
+            line-height: 156%;
         }
     }
+}
 
-    &__bottonLeft,
-    &__bottonRight {
-        @include tablet{
-            flex: 1;
-        }
+&__bottonLeft {
+    width: calc(100% - 50px);
+
+    @include small-tablet {
+        width: 100%;
     }
-
-    &__imgAndTitle {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-    &__bottonRight {
-        img {
-            display: inline;
-        }
-
-        h3 {
-            font-weight: 500;
-            font-size: 30px;
-            color: $dark_blue;
-            padding-bottom: 10px;
-            font-family: $font-family;
-
-            @include small-tablet{
-                font-weight: 500;
-                font-size: 24px;
-                margin-bottom: 45px;
-        }
-        }
-        p {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 167%;
-            color: $gray;
-            font-family: $font-family;
-
-             @include small-tablet{
-
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 156%;
-                margin-bottom: 45px;
-        }
-        }
-    }
+}
+    
 }
 .services {
     margin: 40px 0 115px 0;
@@ -806,7 +786,7 @@
         position: relative;
     }
 
-    // ===== ВЕРХНЯЯ ЧАСТЬ =====
+
     &__top {
         position: relative;
         min-height: 420px;
@@ -875,7 +855,6 @@
         }
     }
 
-    // ===== КАРТА =====
     &__image {
         position: absolute;
         top: 70px;

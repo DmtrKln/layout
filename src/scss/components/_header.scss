@@ -20,9 +20,7 @@
     padding: 40px 0 12px 0;
 
     @include maxdesktop {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      grid-template-columns: auto auto;
       position: relative;
       padding: 30px 0;
     }
@@ -152,8 +150,8 @@
 
   &__burger {
     display: none;
-    width: 32px;
-    height: 32px;
+    width: 25px;
+    height: auto;
     flex-shrink: 0;
     cursor: pointer;
 
