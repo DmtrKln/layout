@@ -41,3 +41,8 @@
     @content;
   }
 }
+@mixin largr-desktop{
+  @media (max-width: (1920px)) {
+    @content;
+  }
+}

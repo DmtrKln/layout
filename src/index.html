@@ -1,47 +1,19 @@
 <!doctype html>
 <html lang="ru" class="page">
-  @include('partials/head.html')
+  <head>
+    <meta charset="utf-8" /></head
+  ><head></head>
   <body class="page__body">
+    @include('partials/head.html')
     <div class="site-container">
       @include('partials/header.html')
-      <div class="mobileMenu" id="mobileMenu">
-        <div class="mobileMenu__top">
-          <a href__="#" class="mobileMenu__logo">
-            <img src="img/logo.svg" alt="Logo" />
-          </a>
-          <button class="mobileMenu__close btn-reset" id="mobileMenuClose">
-            ✕
-          </button>
-        </div>
-
-        <nav class="mobileMenu__nav">
-          <a href__="#">Главная</a>
-          <a href__="#">О нас</a>
-          <a href__="#">Наши услуги</a>
-        </nav>
-
-        <button class="mobileMenu__btn btn-reset">Связаться с нами</button>
-
-        <div class="mobileMenu__bottom">
-          <p>Московский офис: Дзержинский</p>
-          <p>Казанский офис: Пятигорск</p>
-          <a href__="mailto:info@trans-turbo.com" class="mobileMenu__email">
-            info@trans-turbo.com
-          </a>
-          <div class="mobileMenu__icons">
-            <a href__="#"><img src="img/vk.svg" alt="VK" /></a>
-            <a href__="#"><img src="img/tg.svg" alt="Telegram" /></a>
-          </div>
-        </div>
-      </div>
-      <div class="mobileMenu__overlay" id="mobileMenuOverlay"></div>
       <main class="main">
         <section class="bunnert">
           <div class="container">
             <div class="bunnert__wrap">
               <img
                 class="bunnert__mobileContainer"
-                src="img/main/container.svg"
+                src="img/main/1.png"
                 alt=""
               />
               <div class="bunnert__top">
@@ -60,7 +32,6 @@
           <img class="bunnert__line" src="img/main/line.svg" alt="" />
           <img class="bunnert__lineMobail" src="img/main/line2.svg" alt="" />
         </section>
-
         <section class="experience">
           <div class="container">
             <div class="experience__wrapTop">
@@ -93,7 +64,7 @@
                 </div>
                 <div class="experience__card">
                   <h3 class="experience__cardTitle">100%</h3>
-                  <p class="experience__cardeAbout">под контролем</p>
+                  <p class="experience__cardAbout">под контролем</p>
                   <p class="experience__cardWhat">
                     Документальное сопровождение
                   </p>
@@ -125,7 +96,6 @@
             </div>
           </div>
         </section>
-
         <section class="services">
           <div class="container">
             <div class="services__wrap">
@@ -144,154 +114,95 @@
                   </button>
                 </div>
               </div>
-              <div class="services__slider swiper" id="servicesSwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="services__card">
-                      <div class="services__card-img">
-                        <img
-                          src="img/main/transport1.svg"
-                          alt="Автомобильный транспорт"
-                        />
-                      </div>
-                      <div class="services__card-body">
-                        <h4>Автомобильный транспорт</h4>
-                        <p>
-                          Межрегиональные и международные перевозки грузов.
-                          Гибкие маршруты, контроль сроков и надежная доставка
-                        </p>
-                        <a href__="#" class="services__more">Подробнее</a>
-                      </div>
-                    </div>
+              <div class="services__slider swiper">
+                <div class="services__wrapper swiper-wrapper">
+                  <div class="services__card swiper-slide">
+                    <img
+                      src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/ss_dfba6f2477bfa42be69ddfdffbd421d3943d20bf.1920x1080.jpg"
+                      alt=""
+                    />
+                    <h4>Автомобильный транспорт</h4>
+                    <p>
+                      Межрегиональные и международные перевозки грузов. Гибкие
+                      маршруты, контроль сроков и надежная доставка
+                    </p>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="services__card">
-                      <div class="services__card-img">
-                        <img
-                          src="img/main/transport2.svg"
-                          alt="Морские перевозки"
-                        />
-                      </div>
-                      <div class="services__card-body">
-                        <h4>Морские перевозки</h4>
-                        <p>
-                          Международные морские перевозки для глобальных
-                          поставок
-                        </p>
-                        <a href__="#" class="services__more">Подробнее</a>
-                      </div>
-                    </div>
+                  <div class="services__card swiper-slide">
+                    <img
+                      src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/ss_dfba6f2477bfa42be69ddfdffbd421d3943d20bf.1920x1080.jpg"
+                      alt=""
+                    />
+                    <h4>Морские перевозки</h4>
+                    <p>
+                      Международные морские перевозки для глобальных поставок
+                    </p>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="services__card">
-                      <div class="services__card-img">
-                        <img
-                          src="img/main/transport3.svg"
-                          alt="Авиаперевозки"
-                        />
-                      </div>
-                      <div class="services__card-body">
-                        <h4>Авиаперевозки</h4>
-                        <p>
-                          Быстрая международная доставка срочных и ценных грузов
-                        </p>
-                        <a href__="#" class="services__more">Подробнее</a>
-                      </div>
-                    </div>
+                  <div class="services__card swiper-slide">
+                    <img
+                      src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/ss_dfba6f2477bfa42be69ddfdffbd421d3943d20bf.1920x1080.jpg"
+                      alt=""
+                    />
+                    <h4>Авиаперевозки</h4>
+                    <p>
+                      Быстрая международная доставка срочных и ценных грузов
+                    </p>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="services__card">
-                      <div class="services__card-img">
-                        <img src="img/main/transport4.svg" alt="Хранение" />
-                      </div>
-                      <div class="services__card-body">
-                        <h4>Хранение</h4>
-                        <p>
-                          Складские решения для международных и внутренних
-                          грузопотоков
-                        </p>
-                        <a href__="#" class="services__more">Подробнее</a>
-                      </div>
-                    </div>
+                  <div class="services__card swiper-slide">
+                    <img
+                      src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/ss_dfba6f2477bfa42be69ddfdffbd421d3943d20bf.1920x1080.jpg"
+                      alt=""
+                    />
+                    <h4>Хранение</h4>
+                    <p>
+                      Складские решения для международных и внутренних
+                      грузопотоков
+                    </p>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="services__card">
-                      <div class="services__card-img">
-                        <img
-                          src="img/main/transport3.svg"
-                          alt="Автомобильный транспорт"
-                        />
-                      </div>
-                      <div class="services__card-body">
-                        <h4>Автомобильный транспорт</h4>
-                        <p>
-                          Межрегиональные и международные перевозки грузов.
-                          Гибкие маршруты, контроль сроков и надежная доставка
-                        </p>
-                        <a href__="#" class="services__more">Подробнее</a>
-                      </div>
-                    </div>
+                  <div class="services__card swiper-slide">
+                    <img
+                      src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/ss_dfba6f2477bfa42be69ddfdffbd421d3943d20bf.1920x1080.jpg"
+                      alt=""
+                    />
+                    <h4>Автомобильный транспорт</h4>
+                    <p>
+                      Межрегиональные и международные перевозки грузов. Гибкие
+                      маршруты, контроль сроков и надежная доставка
+                    </p>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="services__card">
-                      <div class="services__card-img">
-                        <img
-                          src="img/main/transport3.svg"
-                          alt="Морские перевозки"
-                        />
-                      </div>
-                      <div class="services__card-body">
-                        <h4>Морские перевозки</h4>
-                        <p>
-                          Международные морские перевозки для глобальных
-                          поставок
-                        </p>
-                        <a href__="#" class="services__more">Подробнее</a>
-                      </div>
-                    </div>
+                  <div class="services__card swiper-slide">
+                    <img
+                      src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/ss_dfba6f2477bfa42be69ddfdffbd421d3943d20bf.1920x1080.jpg"
+                      alt=""
+                    />
+                    <h4>Морские перевозки</h4>
+                    <p>
+                      Международные морские перевозки для глобальных поставок
+                    </p>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="services__card">
-                      <div class="services__card-img">
-                        <img
-                          src="img/main/transport3.svg"
-                          alt="Авиаперевозки"
-                        />
-                      </div>
-                      <div class="services__card-body">
-                        <h4>Авиаперевозки</h4>
-                        <p>
-                          Быстрая международная доставка срочных и ценных грузов
-                        </p>
-                        <a href__="#" class="services__more">Подробнее</a>
-                      </div>
-                    </div>
+                  <div class="services__card swiper-slide">
+                    <img
+                      src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/ss_dfba6f2477bfa42be69ddfdffbd421d3943d20bf.1920x1080.jpg"
+                      alt=""
+                    />
+                    <h4>Авиаперевозки</h4>
+                    <p>
+                      Быстрая международная доставка срочных и ценных грузов
+                    </p>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="services__card">
-                      <div class="services__card-img">
-                        <img src="img/main/transport3.svg" alt="Хранение" />
-                      </div>
-                      <div class="services__card-body">
-                        <h4>Хранение</h4>
-                        <p>
-                          Складские решения для международных и внутренних
-                          грузопотоков
-                        </p>
-                        <a href__="#" class="services__more">Подробнее</a>
-                      </div>
-                    </div>
+                  <div class="services__card swiper-slide">
+                    <img
+                      src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/ss_dfba6f2477bfa42be69ddfdffbd421d3943d20bf.1920x1080.jpg"
+                      alt=""
+                    />
+                    <h4>Хранение</h4>
+                    <p>
+                      Складские решения для международных и внутренних
+                      грузопотоков
+                    </p>
                   </div>
                 </div>
-                <div class="services__progress" id="servicesProgress">
-                  <div
-                    class="services__progress-line"
-                    id="servicesProgressLine"
-                  ></div>
-                  <div
-                    class="services__progress-thumb"
-                    id="servicesProgressThumb"
-                  ></div>
+                <div class="services__progress">
+                  <div class="services__progress-line"></div>
                 </div>
               </div>
             </div>
@@ -308,8 +219,8 @@
                   клиентов.
                 </p>
               </div>
-              <nav class="directions__list">
-                <ul>
+              <nav>
+                <ul class="directions__list">
                   <li class="directions__listItem">
                     <div class="directions__listHeader">
                       <a href__="javascript:void(0)">Транспорт</a>
@@ -388,41 +299,25 @@
                     Неважно, где вы — мы обеспечим доставку в любую точку мира.
                   </p>
                 </div>
-                <div class="map__block">
-                  <div class="map__blockInner">
-                    <ul class="map__list">
-                      <li class="map__item">
-                        <span class="map__num">01</span>
-                        <span class="map__text">Опытный персонал</span>
-                      </li>
-                      <li class="map__item">
-                        <span class="map__num">02</span>
-                        <span class="map__text">Устойчивый подход</span>
-                      </li>
-                      <li class="map__item">
-                        <span class="map__num">03</span>
-                        <span class="map__text"
-                          >Международная деловая сеть</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="map__image">
-                  <img src="img/main/Earth.svg" alt="" />
-                </div>
+                <ul class="map__list">
+                  <li class="map__item">Опытный персонал</li>
+                  <li class="map__item">Устойчивый подход</li>
+                  <li class="map__item">Международная деловая сеть</li>
+                </ul>
+                <img src="img/main/Earth.svg" alt="" class="map__image" />
               </div>
             </div>
           </div>
-          <div class="map__block"></div>
-          <div class="map__group">
-            <img src="img/main/sponsor1.png" alt="" />
-            <img src="img/main/sponsor2.png" alt="" />
-            <img src="img/main/sponsor3.png" alt="" />
-            <img src="img/main/sponsor4.png" alt="" />
-            <img src="img/main/sponsor5.png" alt="" />
-            <img src="img/main/sponsor2.png" alt="" />
-            <img src="img/main/sponsor3.png" alt="" />
+          <div class="map__slider">
+            <div class="map__sliderWrap">
+              <img src="img/main/sponsor1.png" alt="" class="map__sliderLogo" />
+              <img src="img/main/sponsor2.png" alt="" class="map__sliderLogo" />
+              <img src="img/main/sponsor3.png" alt="" class="map__sliderLogo" />
+              <img src="img/main/sponsor4.png" alt="" class="map__sliderLogo" />
+              <img src="img/main/sponsor5.png" alt="" class="map__sliderLogo" />
+              <img src="img/main/sponsor2.png" alt="" class="map__sliderLogo" />
+              <img src="img/main/sponsor3.png" alt="" class="map__sliderLogo" />
+            </div>
           </div>
         </section>
         <section class="career">

@@ -1,12 +1,10 @@
 .footer {
-    padding: 70px 0 50px 0;
+    padding: 55px 0 50px 0;
     background-color: $dark_blue;
     overflow: hidden;
 
-   &__logo-wrap {
+&__wrap{
     position: relative;
-    margin-bottom: 20px;
-
 }
 
 &__logo {
@@ -14,22 +12,6 @@
     position: relative;
     z-index: 1;
     max-width: 100px;
-}
-
-&__truck {
-    display: none;
-
-    @include tablet {
-        display: block;
-        position: absolute;
-        top: 70%;
-        left: 55%;
-        width: 100%;
-        height: auto;
-        z-index: 0;
-        pointer-events: none;
-    }
-
 }
 
 &__about {
@@ -45,53 +27,34 @@
     }
 }
 
-&__wrap {
-    background-image: url("../img/main/truck2.svg");
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 50% auto;
-    position: relative;
-
-    @media (max-width: 1400px) {
-        background-size: 55% auto;
-        background-position: 110% center;
-    }
-
-    @media (max-width: 1200px) {
-        background-size: 60% auto;
-        background-position: 120% center;
-    }
-
-    @include tablet {
-        background-image: none;
-    }
+&__nav{
+    margin-bottom: 40px;
 }
 
-    &__menu {
-        display: flex;
-        gap: 65px;
-        margin-bottom: 110px;
+&__menu {
+    display: flex;
+    gap: 65px;
+    margin-bottom: 110px;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 1;
+    }
+
+    li a {
+        font-family: $font-family;
+        color: $white;
+        font-weight: 500;
+        font-size: 18px;
 
         @include tablet {
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 40px;
-            position: relative;
-            z-index: 1;
-        }
-
-        li a {
-            font-family: $font-family;
-            color: $white;
-            font-weight: 500;
-            font-size: 18px;
-            margin-bottom: 70px;
-
-            @include small-tablet {
-                margin-bottom: 15px;
-            }
+            margin-bottom: 15px;
         }
     }
+}
 
     &__info {
         display: flex;
@@ -141,20 +104,22 @@
         @include tablet{
 
             display: block;
-            font-weight: 500;
-            font-size: 18px;
             font-family: $font-family;
             color: $white;
-            margin-top: 35px;
+            margin-top: 25px;
+        }
+
+        @include small-tablet{
+            font-weight: 500;
+            font-size: 18px;
         }
     }
 
     &__socialInfo {
         display: flex;
-        position: relative;
         justify-content: start;
         align-items: center;
-        margin-bottom: 95px;
+        margin-bottom: 60px;
         gap: 40px;
 
         p {
@@ -169,7 +134,7 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 60px;
         }
 
         @include small-tablet{
@@ -184,12 +149,8 @@
         align-items: center;
         gap: 15px;
 
-        p{
-            @include tablet{
-                margin-bottom: 60px;
         }
-        }
-    }
+    
 
     &__copyright {
         display: flex;
@@ -200,7 +161,6 @@
             color: $white;
             font-weight: 300;
             font-size: 16px;
-            margin-bottom: 15px;
         }
 
         p {
@@ -214,7 +174,7 @@
 
         @include tablet {
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
 
             p {
                 text-align: left;
@@ -226,6 +186,38 @@
             flex-direction: column;
             align-items: start;
             gap: 15px;
+        }
+    }
+
+    &__truckDesktop{
+        position: absolute;
+        top: -53px;
+        left: 650px;
+
+        @include maxdesktop{
+            left: 550px;
+        }
+        @include tablet{
+            display: none;
+        }
+    }
+
+    &__truckMobile{
+
+        position: absolute;
+
+        display: none;
+
+        @include tablet{
+            display: block;
+            top: 0;
+            left: 350px;
+        }
+        @include small-tablet{
+            left: 260px;
+        }
+        @include mobile{
+            left: 140px;
         }
     }
 }
