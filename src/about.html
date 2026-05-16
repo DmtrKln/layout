@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8" />
+    <title>About</title>
+  </head>
+
+  <body class="page__body">
+    @include('partials/head.html')
+
+    <div class="site-container">
+      @include('partials/header.html')
+
+      <main class="main">
+        <section class="hero">
+          <div class="container">
+            <div class="hero__wrapp">
+              <div
+                class="hero__title"
+              >
+                <h4>Turbo Trans транспортная логистика</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        <secton class="about">
+          <div class="container">
+            <div class="about__wrapp">
+              <div class="about__desc">
+                <div class="about__text">
+                  <h2>О нас</h2>
+                  <p>
+                    Наша компания, которая работает в транспортно-логистическом
+                    секторе с 2003 года по сей день, продолжает предоставлять услуги в
+                    широком географическом регионе, добавляя Китай, Европу, Казахстан,
+                    Кыргызстан, Узбекистан и Беларусь к своей деятельности между
+                    Турцией и Россией под брендом "Turbo Trans" с ее предприятием в
+                    текстильном секторе в 2016 году.
+                  </p>
+                </div>
+                <div class="about__info">
+                  <div class="about__infoLeft">
+                    <img src="img/icons/Bulb.svg" alt="" />
+                    <div class="about__infoContent">
+                      <h3>Видение</h3>
+                      <p>
+                        Упростить внешнюю торговлю, предложив новые и устойчивые
+                        логистические решения, которые будут создавать различия.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="about__infoRight">
+                    <img src="img/icons/shield.svg" alt="" />
+                    <div class="about__infoContent">
+                      <h3>Миссия</h3>
+                      <p>
+                        Обеспечивать удовлетворение всех потребностей наших клиентов с
+                        помощью безопасных, высококачественных и экономически
+                        эффективных операций.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </secton>
+        @include('partials/line-run.html')
+        @include('partials/directions.html')
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

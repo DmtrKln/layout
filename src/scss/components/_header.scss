@@ -1,12 +1,16 @@
 .header {
 
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 99999999;
     width: 100%;
-    background-color: transparent;;
     transition: 0.3s all ease;
     padding: 40px 0 12px 0;
+    background-color: $white;
+
+    @include laptop{
+        background-color: transparent;
+    }
 
     &__cross {
         display: none;
@@ -114,9 +118,8 @@
         position: relative;
 
         ul {
-            display: none;
+            top: -2000%;
             position: absolute;
-            top: 100%;
             left: 0;
             background-color: $white;
             width: 180px;
@@ -124,6 +127,7 @@
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
             z-index: 10;
+            transition: 0.3s all ease;
         }
 
         ul li {
@@ -141,7 +145,7 @@
         }
 
         &:hover > ul {
-            display: block;
+            top: 100%;
         }
     }
 
@@ -298,5 +302,41 @@
         img{
             width: 30px;
         }
+    }
+}
+
+.cookie-banner{
+    position: fixed;
+    right: 60px;
+    top: 105px;
+    padding: 30px 16px 25px 40px;
+    background: rgba(6, 28, 53, 0.92);
+    border-radius: 20px;
+    max-width: 460px;
+    z-index: 9999;
+
+    p{
+        font-family: $font-family;
+        font-weight: 300;
+        font-size: 16px;
+        font-variant: small-caps;
+        color: #e9e9e9;
+        margin-bottom: 20px;
+
+        span{
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: $white;
+        }
+    }
+
+    button{
+        border: 1px solid #fff;
+        border-radius: 20px;
+        padding: 8px 55px;
+        background: transparent;
+        color: $white;
     }
 }

@@ -2,9 +2,30 @@
     padding: 55px 0 50px 0;
     background-color: $dark_blue;
     overflow: hidden;
+    background-position: center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+@media (max-width:1500px){
+    background-image: none !important; 
+}
+
 
 &__wrap{
     position: relative;
+}
+
+&__truck{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    max-width: none;
+
+    display: none;
+
+    @include tablet{
+        display: block;
+    }
 }
 
 &__logo {

@@ -26,7 +26,7 @@
                   Подробности о компании
                 </button>
               </div>
-              <img class="bunnert__img" src="img/main/truck.svg" alt="" />
+              <img class="bunnert__img" src="img/main/truck.png" alt="" />
             </div>
           </div>
           <img class="bunnert__line" src="img/main/line.svg" alt="" />
@@ -49,32 +49,32 @@
               <div class="experience__cards">
                 <div class="experience__card">
                   <h3 class="experience__cardTitle">30 000+</h3>
-                  <p class="experience__cardAbout">маршрутов</p>
+                  <p class="experience__cardexperience">маршрутов</p>
                   <p class="experience__cardWhat">География перевозок</p>
                 </div>
                 <div class="experience__card">
                   <h3 class="experience__cardTitle">15+</h3>
-                  <p class="experience__cardAbout">лет практики</p>
+                  <p class="experience__cardexperience">лет практики</p>
                   <p class="experience__cardWhat">Опыт в логистике</p>
                 </div>
                 <div class="experience__card">
                   <h3 class="experience__cardTitle">400+</h3>
-                  <p class="experience__cardAbout">компаний</p>
+                  <p class="experience__cardexperience">компаний</p>
                   <p class="experience__cardWhat">Клиенты и партнеры</p>
                 </div>
                 <div class="experience__card">
                   <h3 class="experience__cardTitle">100%</h3>
-                  <p class="experience__cardAbout">под контролем</p>
+                  <p class="experience__cardexperience">под контролем</p>
                   <p class="experience__cardWhat">
                     Документальное сопровождение
                   </p>
                 </div>
               </div>
             </div>
-            <div class="experience__botton">
-              <div class="experience__bottonLeft">
+            <div class="experience__bottom">
+              <div class="experience__bottomLeft">
                 <img src="img/icons/Bulb.svg" alt="" />
-                <div class="experience__bottonContent">
+                <div class="experience__bottomContent">
                   <h3>Видение</h3>
                   <p>
                     Упростить внешнюю торговлю, предложив новые и устойчивые
@@ -82,9 +82,9 @@
                   </p>
                 </div>
               </div>
-              <div class="experience__bottonRight">
+              <div class="experience__bottomRight">
                 <img src="img/icons/shield.svg" alt="" />
-                <div class="experience__bottonContent">
+                <div class="experience__bottomContent">
                   <h3>Миссия</h3>
                   <p>
                     Обеспечивать удовлетворение всех потребностей наших клиентов
@@ -109,9 +109,9 @@
                     Быстрые и эффективные транспортные услуги с широкой сетью
                     обслуживания в каждой точке.
                   </p>
-                  <button class="btn-reset services__btnMobile">
+                  <a class="btn-reset services__btnMobile">
                     Перейти к услугам
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="services__slider swiper">
@@ -208,79 +208,49 @@
             </div>
           </div>
         </section>
-        <section class="directions">
+        @include('partials/directions.html')
+        <section class="keyAreas">
           <div class="container">
-            <div class="directions__wrap">
-              <div class="directions__top">
-                <h4>Наши направления деятельности</h4>
+            <div class="keyAreas__wrap">
+        
+              <div class="keyAreas__title">
+                <h4>Глобальная логистика: наши ключевые направления</h4>
                 <p>
-                  Turbo Trans придерживается политики наилучшего обслуживания в
-                  своё время и работает с целью полной удовлетворённости
-                  клиентов.
+                  Обеспечиваем стабильные цепочки поставок из крупнейших мировых хабов
+                  в любую точку России
                 </p>
               </div>
-              <nav>
-                <ul class="directions__list">
-                  <li class="directions__listItem">
-                    <div class="directions__listHeader">
-                      <a href__="javascript:void(0)">Транспорт</a>
-                      <img
-                        src="img/icons/arrowR.svg"
-                        alt=""
-                        class="directions__listArrow"
-                      />
-                    </div>
-                    <p>
-                      Планирование и контроль финансовых потоков, обеспечивающих
-                      стабильность и эффективность логистических операций.
-                    </p>
-                  </li>
-                  <li class="directions__listItem">
-                    <div class="directions__listHeader">
-                      <a href__="javascript:void(0)">Таможенное оформление</a>
-                      <img
-                        src="img/icons/arrowR.svg"
-                        alt=""
-                        class="directions__listArrow"
-                      />
-                    </div>
-                    <p>
-                      Планирование и контроль финансовых потоков, обеспечивающих
-                      стабильность и эффективность логистических операций.
-                    </p>
-                  </li>
-                  <li class="directions__listItem">
-                    <div class="directions__listHeader">
-                      <a href__="javascript:void(0)">Управление финансами</a>
-                      <img
-                        src="img/icons/arrowR.svg"
-                        alt=""
-                        class="directions__listArrow"
-                      />
-                    </div>
-                    <p>
-                      Планирование и контроль финансовых потоков, обеспечивающих
-                      стабильность и эффективность логистических операций.
-                    </p>
-                  </li>
-                  <li class="directions__listItem">
-                    <div class="directions__listHeader">
-                      <a href__="javascript:void(0)"
-                        >Внешнеторговый консалтинг</a
-                      >
-                      <img
-                        src="img/icons/arrowR.svg"
-                        alt=""
-                        class="directions__listArrow"
-                      />
-                    </div>
-                    <p>
-                      Планирование и контроль финансовых потоков, обеспечивающих
-                      стабильность и эффективность логистических операций.
-                    </p>
-                  </li>
-                </ul>
-              </nav>
+              <div class="keyAreas__slider swiper">
+                <div class="keyAreas__wrapper swiper-wrapper">
+                  <div class="keyAreas__card swiper-slide">
+                    <h5>Китай → Россия</h5>
+                    <p>Прямые маршруты, сборные грузы и контейнерные перевозки</p>
+                  </div>
+                  <div class="keyAreas__card swiper-slide">
+                    <h5>Турция → Россия</h5>
+                    <p>Оптимальные логистические решения и оперативная доставка.</p>
+                  </div>
+                  <div class="keyAreas__card swiper-slide">
+                    <h5>Европа → Россия</h5>
+                    <p>Параллельный импорт и сложные транзитные маршруты</p>
+                  </div>
+                  <div class="keyAreas__card swiper-slide">
+                    <h5>Китай → Россия</h5>
+                    <p>Прямые маршруты, сборные грузы и контейнерные перевозки</p>
+                  </div>
+                  <div class="keyAreas__card swiper-slide">
+                    <h5>Турция → Россия</h5>
+                    <p>Оптимальные логистические решения и оперативная доставка.</p>
+                  </div>
+                  <div class="keyAreas__card swiper-slide">
+                    <h5>Европа → Россия</h5>
+                    <p>Параллельный импорт и сложные транзитные маршруты</p>
+                  </div>
+                </div>
+              </div>
+              <div class="keyAreas__progress">
+                <div class="keyAreas__progress-line"></div>
+              </div>
             </div>
           </div>
         </section>
@@ -304,22 +274,12 @@
                   <li class="map__item">Устойчивый подход</li>
                   <li class="map__item">Международная деловая сеть</li>
                 </ul>
-                <img src="img/main/Earth.svg" alt="" class="map__image" />
               </div>
             </div>
           </div>
-          <div class="map__slider">
-            <div class="map__sliderWrap">
-              <img src="img/main/sponsor1.png" alt="" class="map__sliderLogo" />
-              <img src="img/main/sponsor2.png" alt="" class="map__sliderLogo" />
-              <img src="img/main/sponsor3.png" alt="" class="map__sliderLogo" />
-              <img src="img/main/sponsor4.png" alt="" class="map__sliderLogo" />
-              <img src="img/main/sponsor5.png" alt="" class="map__sliderLogo" />
-              <img src="img/main/sponsor2.png" alt="" class="map__sliderLogo" />
-              <img src="img/main/sponsor3.png" alt="" class="map__sliderLogo" />
-            </div>
-          </div>
+          <img src="img/main/earthDesktop.svg" alt="" class="map__imageDesktop" />
         </section>
+        @include('partials/line-run.html')
         <section class="career">
           <div class="container">
             <div class="career__wrap">
@@ -330,7 +290,7 @@
                   международных перевозок.<br />Пришлите своё резюме на
                   info@trans-turbo.com, и мы свяжемся с вами.
                 </p>
-                <button class="btn-reset">Связаться с нами</button>
+                <a class="btn-reset">Связаться с нами</a>
               </div>
             </div>
           </div>
