@@ -12,6 +12,10 @@
         background-color: transparent;
     }
 
+    @include tablet{
+        position: fixed;
+    }
+
     &__cross {
         display: none;
     }
@@ -39,7 +43,7 @@
     &__mobile {
         position: fixed;
         left: 0;
-        transition: 0.3s all ease;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
         padding: 30px 40px 50px 40px;
         z-index: 9999;
         background-color: #fff;
@@ -118,8 +122,8 @@
         position: relative;
 
         ul {
-            top: -2000%;
             position: absolute;
+            top: 110%;
             left: 0;
             background-color: $white;
             width: 180px;
@@ -127,6 +131,9 @@
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
             z-index: 10;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
             transition: 0.3s all ease;
         }
 
@@ -145,7 +152,9 @@
         }
 
         &:hover > ul {
-            top: 100%;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
         }
     }
 
