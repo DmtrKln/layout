@@ -87,6 +87,43 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+  // =========================
+  // SOLUTIONS SWIPER
+  // =========================
+
+  const solutionsSwiper = new Swiper(".solutions__slider", {
+    slidesPerView: 3,
+    spaceBetween: 15,
+    speed: 800,
+    watchSlidesProgress: true,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+
+    on: {
+      init() {
+        updateProgress(this, ".solutions__progress-line");
+        paintCards();
+      },
+
+      slideChange() {
+        updateProgress(this, ".solutions__progress-line");
+      },
+
+      resize() {
+        updateProgress(this, ".solutions__progress-line");
+      },
+    },
+  });
 
   // =========================
   // UPDATE PROGRESS

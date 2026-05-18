@@ -2,7 +2,7 @@
 
     position: sticky;
     top: 0;
-    z-index: 99999999;
+    z-index: 99999;
     width: 100%;
     transition: 0.3s all ease;
     padding: 40px 0 12px 0;
@@ -322,7 +322,7 @@
     background: rgba(6, 28, 53, 0.92);
     border-radius: 20px;
     max-width: 460px;
-    z-index: 9999;
+    z-index: 999999;
 
     p{
         font-family: $font-family;
